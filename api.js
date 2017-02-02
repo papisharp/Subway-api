@@ -13,14 +13,15 @@ $(document).ready(function() {
      
      
       function(response) {
-        console.log(response);
         $("#gif").append("<img src=" + response.data[0].images.fixed_width_downsampled.url + ">");
       });
   });
   
   $.getJSON(
-      "http://ajar-target.gomix.me/stops", 
+      "https://ajar-target.gomix.me/stops", 
   function(response){
-      console.log(response)
+      var stops = Object.keys( response );
+      for
+      (  );
       }) 
 
